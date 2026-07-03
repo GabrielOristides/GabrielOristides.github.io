@@ -414,11 +414,14 @@ h3 {
 }
 
 .terminal-window {
+    --terminal-line-bottom: 18px;
+    --terminal-line-clearance: 34px;
     position: relative;
     z-index: 2;
     width: min(100%, 470px);
     min-height: 320px;
-    padding: 18px;
+    padding: 18px 18px calc(18px + var(--terminal-line-clearance));
+    overflow: hidden;
     border: 1px solid var(--line);
     border-radius: var(--radius);
     background:
@@ -430,13 +433,15 @@ h3 {
 }
 
 .mini-terminal {
+    --terminal-line-bottom: 14px;
     position: absolute;
     left: -96px;
     bottom: 28px;
     z-index: 4;
     width: min(62%, 292px);
-    min-height: 142px;
-    padding: 14px;
+    height: 160px;
+    min-height: 0;
+    padding: 14px 14px calc(14px + var(--terminal-line-clearance));
 }
 
 .mini-terminal .window-bar {
@@ -444,18 +449,20 @@ h3 {
 }
 
 .mini-terminal pre {
+    max-height: 68px;
+    overflow: hidden;
     font-size: clamp(0.72rem, 1.3vw, 0.86rem);
     line-height: 1.46;
 }
 
 .mini-terminal::after {
-    inset-inline: 14px;
+    inset: auto 14px var(--terminal-line-bottom);
 }
 
 .terminal-window::after {
     content: "";
     position: absolute;
-    inset: auto 18px 18px;
+    inset: auto 18px var(--terminal-line-bottom);
     height: 4px;
     border-radius: 999px;
     background: linear-gradient(90deg, var(--lime), var(--orange), var(--rose), var(--cyan));
