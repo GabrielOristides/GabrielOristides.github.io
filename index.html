@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Oristides | Desenvolvedor</title>
+    <meta name="description" content="Portfólio pessoal de Gabriel Oristides, desenvolvedor focado em sistemas, automações, dashboards e experiências web.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Ir para o início">
+            <span class="brand-mark">GO</span>
+            <span>Gabriel Oristides</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Navegação principal">
+            <a href="#projetos">Projetos</a>
+            <a href="#stack">Stack</a>
+            <a href="#processo">Processo</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <a class="icon-button" href="#contato" aria-label="Abrir contato">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6.5h16v11H4z"></path>
+                <path d="m4.5 7 7.5 6 7.5-6"></path>
+            </svg>
+        </a>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-copy" data-reveal>
+                <p class="eyebrow">Desenvolvedor full-stack em evolução constante</p>
+                <h1>Gabriel Oristides</h1>
+                <p class="hero-text">
+                    Eu transformo ideias, processos e problemas reais em aplicações web, automações e ferramentas digitais com visual moderno, fluxo claro e código bem cuidado.
+                </p>
+                <div class="hero-actions" aria-label="Ações principais">
+                    <a class="button primary magnetic" href="#projetos">
+                        <span>Ver projetos</span>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m13 6 6 6-6 6"></path>
+                        </svg>
+                    </a>
+                    <a class="button ghost magnetic" href="#contato">
+                        <span>Falar comigo</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-panel portrait-panel" data-reveal>
+                <figure class="portrait-frame tilt-card">
+                    <img src="assets/gabriel-oristides.jpg" alt="Foto de Gabriel Oristides">
+                    <figcaption>
+                        <span>Gabriel Oristides</span>
+                        <strong>Desenvolvedor full-stack</strong>
+                    </figcaption>
+                </figure>
+
+                <div class="terminal-window mini-terminal tilt-card">
+                    <div class="window-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <pre aria-label="Terminal animado"><code id="typed-code"></code><span class="caret"></span></pre>
+                </div>
+                <div class="orbit-system" aria-hidden="true">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>SQL</span>
+                    <span>UI</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="ticker-section" aria-label="Tecnologias">
+            <div class="ticker">
+                <div class="ticker-track">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Supabase</span>
+                    <span>Automação</span>
+                    <span>Dashboards</span>
+                    <span>APIs</span>
+                    <span>Deploy</span>
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Supabase</span>
+                    <span>Automação</span>
+                    <span>Dashboards</span>
+                    <span>APIs</span>
+                    <span>Deploy</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section intro-grid">
+            <div class="section-heading" data-reveal>
+                <p class="eyebrow">Sobre</p>
+                <h2>Construindo soluções que parecem simples porque pensaram nos detalhes.</h2>
+            </div>
+
+            <div class="stats-grid">
+                <article class="stat-card tilt-card" data-reveal>
+                    <strong data-count="12">0</strong>
+                    <span>Projetos e estudos práticos</span>
+                </article>
+                <article class="stat-card tilt-card" data-reveal>
+                    <strong data-count="5">0</strong>
+                    <span>Áreas exploradas</span>
+                </article>
+                <article class="stat-card tilt-card" data-reveal>
+                    <strong data-count="100">0</strong>
+                    <span>Foco em evolução</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section projects-section" id="projetos">
+            <div class="section-heading narrow" data-reveal>
+                <p class="eyebrow">Projetos em destaque</p>
+                <h2>Aplicações com propósito, movimento e acabamento.</h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card tilt-card" data-reveal>
+                    <div class="project-media media-saas" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-kicker">SaaS</p>
+                        <h3>To Pet SaaS</h3>
+                        <p>Sistema para gestão de clientes, planos, pagamentos e rotinas operacionais com base em Flask e Supabase.</p>
+                        <div class="tags">
+                            <span>Flask</span>
+                            <span>Supabase</span>
+                            <span>Pagamentos</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card tilt-card" data-reveal>
+                    <div class="project-media media-tools" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-kicker">Engenharia</p>
+                        <h3>Vedação Conversor</h3>
+                        <p>Ferramenta para consulta e conversão de bases técnicas, ajudando a acelerar decisões em componentes industriais.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Dados</span>
+                            <span>UX técnica</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card tilt-card" data-reveal>
+                    <div class="project-media media-auto" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-kicker">Automação</p>
+                        <h3>SolidWorks Project Cloner</h3>
+                        <p>Automação para clonar estruturas, revisar referências e organizar projetos de CAD com mais segurança.</p>
+                        <div class="tags">
+                            <span>C#</span>
+                            <span>Desktop</span>
+                            <span>SolidWorks</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section stack-section" id="stack">
+            <div class="section-heading" data-reveal>
+                <p class="eyebrow">Stack</p>
+                <h2>Ferramentas que uso para sair da ideia e chegar no produto.</h2>
+            </div>
+
+            <div class="stack-layout">
+                <div class="skill-cloud" data-reveal aria-label="Habilidades">
+                    <button type="button" data-skill="backend">Backend</button>
+                    <button type="button" data-skill="frontend">Frontend</button>
+                    <button type="button" data-skill="dados">Dados</button>
+                    <button type="button" data-skill="automacao">Automação</button>
+                    <button type="button" data-skill="produto">Produto</button>
+                </div>
+
+                <div class="skill-detail tilt-card" data-reveal>
+                    <p class="project-kicker" id="skill-label">Backend</p>
+                    <h3 id="skill-title">APIs, rotas e regras de negócio</h3>
+                    <p id="skill-text">Criação de sistemas com Flask, integrações, autenticação, bancos relacionais e rotinas que reduzem trabalho manual.</p>
+                    <div class="progress-list">
+                        <span style="--value: 88%">Python</span>
+                        <span style="--value: 82%">Flask</span>
+                        <span style="--value: 76%">SQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section process-section" id="processo">
+            <div class="section-heading narrow" data-reveal>
+                <p class="eyebrow">Processo</p>
+                <h2>Do problema ao produto em ciclos curtos.</h2>
+            </div>
+
+            <div class="timeline">
+                <article data-reveal>
+                    <span>01</span>
+                    <h3>Mapear</h3>
+                    <p>Entender a rotina, a dor e onde a tecnologia realmente ganha tempo.</p>
+                </article>
+                <article data-reveal>
+                    <span>02</span>
+                    <h3>Prototipar</h3>
+                    <p>Criar uma primeira versão navegável, objetiva e fácil de validar.</p>
+                </article>
+                <article data-reveal>
+                    <span>03</span>
+                    <h3>Construir</h3>
+                    <p>Implementar com código claro, interface responsiva e dados confiáveis.</p>
+                </article>
+                <article data-reveal>
+                    <span>04</span>
+                    <h3>Evoluir</h3>
+                    <p>Medir uso, ajustar fluxo e transformar feedback em melhorias reais.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contato">
+            <div class="contact-copy" data-reveal>
+                <p class="eyebrow">Contato</p>
+                <h2>Tem uma ideia, sistema ou automação para tirar do papel?</h2>
+                <p>Vamos transformar isso em algo bonito, funcional e pronto para uso.</p>
+            </div>
+
+            <div class="contact-actions" data-reveal>
+                <a class="button primary magnetic" href="mailto:seuemail@exemplo.com">
+                    <span>Enviar e-mail</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 6.5h16v11H4z"></path>
+                        <path d="m4.5 7 7.5 6 7.5-6"></path>
+                    </svg>
+                </a>
+                <a class="button ghost magnetic" href="https://www.linkedin.com/in/seu-usuario/" target="_blank" rel="noreferrer">
+                    <span>LinkedIn</span>
+                </a>
+                <a class="button ghost magnetic" href="https://github.com/seu-usuario" target="_blank" rel="noreferrer">
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>Gabriel Oristides</span>
+        <span>Portfólio pessoal moderno e animado</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
