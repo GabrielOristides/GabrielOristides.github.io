@@ -133,7 +133,7 @@ async function typeCode() {
             typedCode.textContent += fullText[index];
             await wait(fullText[index] === "\n" ? 80 : 22);
         }
-        await wait(1000);
+        await wait(5000);
     }
 }
 
