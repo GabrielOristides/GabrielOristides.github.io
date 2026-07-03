@@ -106,16 +106,17 @@ function updatePointer(event) {
 }
 
 const codeLines = [
-    "const dev = 'Gabriel';",
-    "const stack = ['Python', 'Flask', 'JS'];",
+    "const dev = 'Gabriel Oristides';",
+    "const stack = ['Python', 'Flask', 'JavaScript'];",
     "",
     "build({",
     "  foco: 'soluções reais',",
     "  visual: 'moderno',",
-    "  entrega: 'produto'",
+    "  entrega: 'produto funcional',",
+    "  objetivo: 'negócios crescendo'",
     "});",
     "",
-    "deploy('com movimento');"
+    "deploy('ideias em produção');"
 ];
 
 async function typeCode() {

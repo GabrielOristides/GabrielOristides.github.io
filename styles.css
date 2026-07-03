@@ -436,7 +436,7 @@ h3 {
     --terminal-line-bottom: 14px;
     position: absolute;
     left: -96px;
-    top: 300px;
+    top: 278px;
     bottom: auto;
     z-index: 4;
     width: min(76%, 360px);
