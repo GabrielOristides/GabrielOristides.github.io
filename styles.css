@@ -436,11 +436,12 @@ h3 {
     --terminal-line-bottom: 14px;
     position: absolute;
     left: -96px;
-    bottom: 28px;
+    top: 300px;
+    bottom: auto;
     z-index: 4;
-    width: min(62%, 292px);
-    height: 160px;
-    min-height: 0;
+    width: min(76%, 360px);
+    height: auto;
+    min-height: 160px;
     padding: 14px 14px calc(14px + var(--terminal-line-clearance));
 }
 
@@ -449,8 +450,6 @@ h3 {
 }
 
 .mini-terminal pre {
-    max-height: 68px;
-    overflow: hidden;
     font-size: clamp(0.72rem, 1.3vw, 0.86rem);
     line-height: 1.46;
 }
