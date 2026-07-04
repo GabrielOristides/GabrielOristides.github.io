@@ -685,6 +685,33 @@ pre {
     background: #17140d;
 }
 
+.project-image {
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(circle at 84% 24%, rgba(155, 93, 229, 0.35), transparent 34%),
+        linear-gradient(135deg, #061426, #1b0d43 72%);
+}
+
+.project-image img {
+    position: relative;
+    z-index: 2;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    display: block;
+    border-radius: calc(var(--radius) - 2px);
+    object-fit: contain;
+    object-position: center;
+    filter: saturate(1.06) contrast(1.03);
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+    transition: transform 420ms ease;
+}
+
+.project-card:hover .project-image img,
+.project-card:focus-within .project-image img {
+    transform: scale(1.035);
+}
+
 .project-media::before {
     content: "";
     position: absolute;
@@ -704,6 +731,24 @@ pre {
     border-radius: var(--radius);
     background: rgba(11, 10, 8, 0.66);
     backdrop-filter: blur(8px);
+}
+
+.project-image::before {
+    inset: 0;
+    z-index: 3;
+    background:
+        linear-gradient(180deg, rgba(11, 10, 8, 0.05), rgba(11, 10, 8, 0.22)),
+        radial-gradient(circle at 50% 20%, transparent, rgba(11, 10, 8, 0.2));
+    opacity: 1;
+    animation: none;
+    pointer-events: none;
+}
+
+.project-image::after {
+    z-index: 4;
+    background: transparent;
+    backdrop-filter: none;
+    pointer-events: none;
 }
 
 .project-media span {
